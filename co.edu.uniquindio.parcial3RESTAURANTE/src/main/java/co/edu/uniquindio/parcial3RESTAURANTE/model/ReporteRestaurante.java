@@ -6,7 +6,7 @@ import java.util.Map;
 
 /**
  * Resumen de ventas del restaurante. Solo cuenta los pedidos que son venta
- * ({@link Pedido#esVenta()}: CONFIRMADO o ENTREGADO).
+ * : CONFIRMADO o ENTREGADO).
  *
  * @param ingresosRestaurante       ingresos propios: solo productos, sin domicilios.
  * @param ingresosDomicilios        total cobrado por domicilios.

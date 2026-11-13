@@ -61,9 +61,7 @@ public class Main {
         menuPrincipal();
     }
 
-    // =====================================================================
-    // MENUS
-    // =====================================================================
+    //Menu
 
     private static void menuPrincipal() {
         String[] opciones = {
@@ -283,9 +281,7 @@ public class Main {
         }
     }
 
-    // =====================================================================
-    // PRODUCTOS (CRUD)
-    // =====================================================================
+    //CRUD de producto
 
     private static void crearPlatoFuerte() throws RestauranteException {
         DatosBase d = leerDatosBase(null);
@@ -423,9 +419,7 @@ public class Main {
                 "No hay productos registrados.", null);
     }
 
-    // =====================================================================
-    // CLIENTES (CRUD)
-    // =====================================================================
+    //CRUD clientes
 
     private static void crearCliente() throws RestauranteException {
         String documento = leerTexto("Numero de documento:", "");
@@ -501,9 +495,7 @@ public class Main {
         }
     }
 
-    // =====================================================================
-    // PEDIDOS
-    // =====================================================================
+    //CRUD pedido
 
     private static void crearPedido() throws RestauranteException {
         Cliente cliente = elegirCliente("Cliente que realiza el pedido:");
@@ -623,9 +615,7 @@ public class Main {
                 mensajeVacio, null);
     }
 
-    // =====================================================================
-    // CONSULTAS Y REPORTES
-    // =====================================================================
+    //Consultas y reportes
 
     private static void consultarProductosDisponibles() {
         List<Producto> lista = restaurante.consultarProductosDisponibles();
@@ -696,9 +686,7 @@ public class Main {
         mostrarTexto("Empresas de domicilio", sb.toString().trim());
     }
 
-    // =====================================================================
-    // TEXTOS DESCRIPTIVOS
-    // =====================================================================
+    //Textos descriptivos, para el menu
 
     private static String describirProducto(Producto p) {
         String categoria;
@@ -828,9 +816,7 @@ public class Main {
         return String.valueOf(valor);
     }
 
-    // =====================================================================
-    // ENTRADA Y SALIDA CON JOPTIONPANE
-    // =====================================================================
+
 
     /** Menu desplegable. Devuelve la opcion elegida o null si se cancela. */
     private static String elegirOpcion(String titulo, String mensaje, String[] opciones) {
@@ -975,7 +961,7 @@ public class Main {
         JOptionPane.showMessageDialog(null, mensaje, TITULO + " - Error", JOptionPane.ERROR_MESSAGE);
     }
 
-    /** Muestra un texto largo en un area con barra de desplazamiento. */
+    /** Muestra un texto largo  */
     private static void mostrarTexto(String titulo, String texto) {
         JTextArea area = new JTextArea(texto);
         area.setEditable(false);
