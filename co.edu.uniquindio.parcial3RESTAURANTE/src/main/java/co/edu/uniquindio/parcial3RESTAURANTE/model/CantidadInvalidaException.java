@@ -1,6 +1,4 @@
-package co.ede.uniquindio.Parcial3Restaurante.model;
-
-import co.edu.uniquindio.parcial3RESTAURANTE.model.RestauranteException;
+package co.edu.uniquindio.parcial3RESTAURANTE.model;
 
 /**
  * Se lanza cuando la cantidad solicitada de un producto no es mayor que cero.
